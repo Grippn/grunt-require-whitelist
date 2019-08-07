@@ -49,7 +49,7 @@ grunt.initConfig({
 ```
 
 ## The “dependencyCheck” task
-See the `grunt-dependency-check` [docs](https://github.com/sindresorhus/grunt-dependency-check).
+Removed the dependencyCheck task. Include it in your own grunt file.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).

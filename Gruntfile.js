@@ -1,6 +1,6 @@
 /*
  * grunt-require-whitelist
- * 
+ *
  *
  * Copyright (c) 2015 Matt Casella
  * Licensed under the MIT license.
@@ -38,20 +38,7 @@ module.exports = function (grunt) {
         },
         src: ['../lib/**/*']
       }
-      
-    },
-    dependencyCheck: {
-      default: {
-        files: ['app.js', './lib/**/*.js'], // same as --entry
-        options: {
-          package: '.',
-          missing: true,
-          unused: true,
-          excludeUnusedDev: false,
-          ignoreUnused: [],
-          noDefaultEntries: true
-        }
-      }
+
     },
 
     // Unit tests.
