@@ -95,7 +95,7 @@ module.exports = function(grunt) {
 
       function logRequire(require) {
         if (require.allowed) {
-          if(require.reason !== "local" || require.reason !== "whitelisted" ){
+          if(require.reason !== "local" && require.reason !== "whitelisted" ){
             grunt.log.writeln(
               require.file +
               " requires " +
