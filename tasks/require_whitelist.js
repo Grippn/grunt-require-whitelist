@@ -64,8 +64,8 @@ module.exports = function(grunt) {
       var errorRequires = [];
 
       var done = this.async();
-      console.log("Checking files: ");
-      console.log(this.filesSrc);
+      // console.log("Checking files: ");
+      // console.log(this.filesSrc);
 
       function checkRequire(require) {
         var requireString = require.requireString;
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
 
       function logRequire(require) {
         if (require.allowed) {
-          if(require.reason !== "local"){
+          if(require.reason !== "local" || require.reason !== "whitelisted" ){
             grunt.log.writeln(
               require.file +
               " requires " +
